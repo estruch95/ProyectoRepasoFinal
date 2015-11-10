@@ -1,0 +1,33 @@
+<resources>
+    <string name="app_name">ProyectoRepasoFinal</string>
+
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <!-- ACTIVITY 1 -->
+    <string name="txtAct1">Que desea hacer?</string>
+    <string name="btn_datos">Datos</string>
+    <string name="btn_listview">ListView</string>
+    <string name="btn_spinner">Spinner</string>
+    <string name="btn_notificacion">Notificacion</string>
+    <string name="btn_lvPersonalizado">ListView Mod</string>
+    <string name="btn_spPersonalizado">Spinner Mod</string>
+    <string name="title_activity_activity_datos">ActivityDatos</string>
+
+    <!-- ACTIVITY 2 -->
+    <string name="nombre">Nombre:</string>
+    <string name="apellidos">Apellidos:</string>
+    <string name="dni">DNI:</string>
+    <string name="carnet">Carnet:</string>
+    <string name="sexo">Sexo:</string>
+    <string name="hombre">Hombre</string>
+    <string name="mujer">Mujer</string>
+    <string name="valoracion">Valora esta app:</string>
+    <string name="edad">Edad:</string>
+    <string name="guardar">Guardar</string>
+    <string name="restaurar">Restaurar</string>
+    <string name="title_activity_activity_info">ActivityInfo</string>
+
+    <!-- ACTIVITY INFO-->
+    <string name="btnContinuar">Continuar</string>
+    <string name="texto">Son correctos sus datos?</string>
+</resources>
