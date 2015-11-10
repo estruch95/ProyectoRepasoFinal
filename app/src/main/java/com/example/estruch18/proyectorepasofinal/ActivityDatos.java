@@ -134,7 +134,7 @@ public class ActivityDatos extends Activity {
 
         switch (requestCode){
             case ACTIVITY_INFO:
-                gestionActivityInfo(requestCode, data);
+                gestionActivityInfo(resultCode, data);
                 break;
         }
     }
