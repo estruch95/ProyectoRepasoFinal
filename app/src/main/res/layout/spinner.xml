@@ -21,11 +21,10 @@
         android:layout_height="wrap_content"
         android:textAppearance="?android:attr/textAppearanceMedium"
         android:id="@+id/tv_infoSpLocal"
-        android:layout_alignParentTop="true"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="55dp"
         android:text="@string/infoSpLocal"
-        android:textColor="#ffffffff" />
+        android:textColor="#ffffffff"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true" />
 
     <Spinner
         android:layout_width="165dp"
@@ -45,4 +44,32 @@
         android:layout_below="@+id/sp_ProvinciasLocal"
         android:layout_alignParentStart="true"
         android:layout_marginTop="10dp" />
+
+    <Spinner
+        android:layout_width="165dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/spProvincias"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="25dp" />
+
+    <Spinner
+        android:layout_width="165dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/spPueblos"
+        android:layout_alignTop="@+id/spProvincias"
+        android:layout_toEndOf="@+id/spProvincias"
+        android:layout_marginLeft="10dp"
+        android:layout_marginBottom="25dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:id="@+id/tv_typedArray"
+        android:text="@string/infoTypedArray"
+        android:textColor="#ffffffff"
+        android:layout_below="@+id/spProvinciasDinamico"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="20dp" />
 </RelativeLayout>

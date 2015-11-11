@@ -1,10 +1,14 @@
 package com.example.estruch18.proyectorepasofinal;
 
 import android.app.Activity;
+import android.content.res.TypedArray;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.view.View;
+import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
+import android.widget.Toast;
 
 import java.util.ArrayList;
 
@@ -12,7 +16,10 @@ import java.util.ArrayList;
 public class Spinner extends Activity {
 
     //Atributos de la clase
+    //SPINNERS LOCAL Y DINÁMICO
     private android.widget.Spinner spProvinciasLocal, spProvinciasDinamico;
+    //SPINNERS CON CARGA DE DATOS MASIVA MEDIANTE TYPEDARRAY
+    private android.widget.Spinner spProvincias, spPueblos;
     private ArrayList<String> provincias;
 
     @Override
@@ -23,10 +30,13 @@ public class Spinner extends Activity {
         //Declaración de atributos de la clase
         spProvinciasLocal = (android.widget.Spinner)findViewById(R.id.sp_ProvinciasLocal);
         spProvinciasDinamico = (android.widget.Spinner)findViewById(R.id.spProvinciasDinamico);
+        spProvincias = (android.widget.Spinner)findViewById(R.id.spProvincias);
+        spPueblos = (android.widget.Spinner)findViewById(R.id.spPueblos);
 
         //Ejecución de métodos
         spinnerLocal();
         spinnerDinamico();
+        spinnerTypedArray();
     }
 
     @Override
@@ -68,5 +78,30 @@ public class Spinner extends Activity {
         ArrayAdapter adaptadorDinamico = ArrayAdapter.createFromResource(this, R.array.provincias, android.R.layout.simple_spinner_item);
         adaptadorDinamico.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
         spProvinciasDinamico.setAdapter(adaptadorDinamico);
+    }
+
+    public void spinnerTypedArray(){
+        //RELLENO DE DATOS EN spProvincias
+        ArrayAdapter adaptadorProvincias = ArrayAdapter.createFromResource(this, R.array.provinciasEsp, android.R.layout.simple_spinner_item);
+        adaptadorProvincias.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
+        spProvincias.setAdapter(adaptadorProvincias);
+
+        spProvincias.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
+            @Override
+            public void onItemSelected(AdapterView<?> parent, View view, int position, long id) {
+                //Creación de un objeto TypedArray
+                TypedArray pueblos = getResources().obtainTypedArray(R.array.array_provincia_a_localidades);
+                String localidades[] = getResources().getStringArray(pueblos.getResourceId(position, 0));
+
+                ArrayAdapter adaptadorPueblos = new ArrayAdapter(Spinner.this, android.R.layout.simple_spinner_item, localidades);
+                adaptadorPueblos.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
+                spPueblos.setAdapter(adaptadorPueblos);
+            }
+
+            @Override
+            public void onNothingSelected(AdapterView<?> parent) {
+                Toast.makeText(getApplicationContext(), "Sin selección", Toast.LENGTH_SHORT).show();
+            }
+        });
     }
 }
