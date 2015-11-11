@@ -74,7 +74,8 @@ public class Activity1 extends Activity {
         this.btnSpinner.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-
+                Intent actSpinner = new Intent(getApplicationContext(), Spinner.class);
+                startActivity(actSpinner);
             }
         });
     }

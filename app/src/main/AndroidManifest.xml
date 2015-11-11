@@ -24,6 +24,10 @@
             android:name=".ActivityInfo"
             android:label="@string/title_activity_activity_info" >
         </activity>
+        <activity
+            android:name=".Spinner"
+            android:label="@string/title_activity_spinner" >
+        </activity>
     </application>
 
 </manifest>
