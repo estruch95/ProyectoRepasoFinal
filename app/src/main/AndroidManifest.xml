@@ -32,6 +32,10 @@
             android:name=".ListView"
             android:label="@string/title_activity_list_view" >
         </activity>
+        <activity
+            android:name=".Notificacion"
+            android:label="@string/title_activity_notificacion" >
+        </activity>
     </application>
 
 </manifest>

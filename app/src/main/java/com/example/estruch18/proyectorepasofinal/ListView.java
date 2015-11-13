@@ -56,7 +56,7 @@ public class ListView extends Activity {
         lvProvincias.setAdapter(adaptador);
     }
 
-    //Mñetodo encargado de obtener la selección del listview 
+    //Mñetodo encargado de obtener la selección del listview
     public void getSeleccionProv(){
         lvProvincias.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override

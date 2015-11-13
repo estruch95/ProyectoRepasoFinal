@@ -13,7 +13,7 @@ import java.util.List;
 
 public class Activity1 extends Activity {
     //Atributos del Activity 1
-    private Button btnDatos, btnListView, btnSpinner, btnNotificacion, btnLvMod, btnSpMod;
+    private Button btnDatos, btnListView, btnSpinner, btnNotificacion;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -25,8 +25,6 @@ public class Activity1 extends Activity {
         btnListView = (Button)findViewById(R.id.btnListView);
         btnSpinner = (Button)findViewById(R.id.btnSpinner);
         btnNotificacion = (Button)findViewById(R.id.btnNotificacion);
-        btnLvMod = (Button)findViewById(R.id.btnLvMod);
-        btnSpMod = (Button)findViewById(R.id.btnSpMod);
     }
 
     @Override
@@ -69,14 +67,7 @@ public class Activity1 extends Activity {
     }
 
     public void accionBtnNotificacion(View v){
-
-    }
-
-    public void accionBtnLvMod(View v){
-
-    }
-
-    public void accionBtnSpMod(View v){
-
+        Intent actNotificacion = new Intent(getApplicationContext(), Notificacion.class);
+        startActivity(actNotificacion);
     }
 }

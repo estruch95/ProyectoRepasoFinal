@@ -52,31 +52,11 @@
     <Button
         android:layout_width="120dp"
         android:layout_height="60dp"
-        android:id="@+id/btnLvMod"
-        android:onClick="accionBtnLvMod"
-        android:text="@string/btn_lvPersonalizado"
-        android:layout_below="@+id/btnSpinner"
-        android:layout_alignEnd="@+id/btnSpinner"
-        android:layout_alignParentStart="true" />
-
-    <Button
-        android:layout_width="120dp"
-        android:layout_height="60dp"
-        android:id="@+id/btnSpMod"
-        android:onClick="accionBtnSpMod"
-        android:text="@string/btn_spPersonalizado"
-        android:layout_below="@+id/btnLvMod"
-        android:layout_alignEnd="@+id/btnLvMod"
-        android:layout_alignParentStart="true" />
-
-    <Button
-        android:layout_width="120dp"
-        android:layout_height="60dp"
         android:id="@+id/btnListView"
         android:onClick="accionBtnListView"
         android:text="@string/btn_listview"
-        android:layout_below="@+id/btnSpMod"
-        android:layout_alignEnd="@+id/btnSpMod"
-        android:layout_alignParentStart="true" />
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/btnSpinner"
+        android:layout_alignEnd="@+id/btnSpinner" />
 
 </RelativeLayout>

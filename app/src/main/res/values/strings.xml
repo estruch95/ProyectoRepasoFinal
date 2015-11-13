@@ -37,5 +37,10 @@
     <string name="infoSpDinamico">El siguiente SPINNER carga datos a través del xml "arrays" generado como recurso</string>
     <string name="infoTypedArray">Los siguientes spinners son dinámicos y cargan datos masivos de un xml a traves de un typedArray </string>
     <string name="title_activity_list_view">ListView</string>
+    <string name="title_activity_spinner_mod">SpinnerModAct</string>
+    <string name="title_activity_notificacion">Notificacion</string>
+
+    <!-- ACTIVITY NOTIFICACION -->
+    <string name="btnNotificacion">Abrir notificación</string>
 
 </resources>
