@@ -8,6 +8,8 @@ import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
 
+import java.util.List;
+
 
 public class Activity1 extends Activity {
     //Atributos del Activity 1
@@ -52,58 +54,29 @@ public class Activity1 extends Activity {
     //Listeners de los botones del Activity 1:
 
     public void accionBtnDatos(View v){
-        this.btnDatos.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent actDatos = new Intent(getApplicationContext(), ActivityDatos.class);
-                startActivity(actDatos);
-            }
-        });
+        Intent actDatos = new Intent(getApplicationContext(), ActivityDatos.class);
+        startActivity(actDatos);
     }
 
     public void accionBtnListView(View v){
-        this.btnListView.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-
-            }
-        });
+        Intent actListView = new Intent(getApplicationContext(), ListView.class);
+        startActivity(actListView);
     }
 
     public void accionBtnSpinner(View v){
-        this.btnSpinner.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent actSpinner = new Intent(getApplicationContext(), Spinner.class);
-                startActivity(actSpinner);
-            }
-        });
+        Intent actSpinner = new Intent(getApplicationContext(), Spinner.class);
+        startActivity(actSpinner);
     }
 
     public void accionBtnNotificacion(View v){
-        this.btnNotificacion.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
 
-            }
-        });
     }
 
     public void accionBtnLvMod(View v){
-        this.btnLvMod.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
 
-            }
-        });
     }
 
     public void accionBtnSpMod(View v){
-        this.btnSpMod.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
 
-            }
-        });
     }
 }

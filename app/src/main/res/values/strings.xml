@@ -36,5 +36,6 @@
     <string name="infoSpLocal">El siguiente SPINNER carga datos a través de un ArrayAdapter normal y de formal local mediante un ArrayList como atributo local de la clase</string>
     <string name="infoSpDinamico">El siguiente SPINNER carga datos a través del xml "arrays" generado como recurso</string>
     <string name="infoTypedArray">Los siguientes spinners son dinámicos y cargan datos masivos de un xml a traves de un typedArray </string>
+    <string name="title_activity_list_view">ListView</string>
 
 </resources>

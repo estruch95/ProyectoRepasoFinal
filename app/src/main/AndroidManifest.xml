@@ -28,6 +28,10 @@
             android:name=".Spinner"
             android:label="@string/title_activity_spinner" >
         </activity>
+        <activity
+            android:name=".ListView"
+            android:label="@string/title_activity_list_view" >
+        </activity>
     </application>
 
 </manifest>
